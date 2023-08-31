@@ -11,11 +11,12 @@ body {
 .container {
     max-width: 900px;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .main-title {
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     color: #e53170;
     padding: 30px;
 }
@@ -23,4 +24,42 @@ body {
  .main-paragraph {
     text-align: center;
     font-size: 14px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card {
+    float: left;
+    width: calc(100% / 3 - 20px);
+    background-color: black;
+    margin: 10px;
+    box-shadow: 0px 0px 3px 3px #88888848;
+}
+
+.image img {
+    width: 65px;
+    float: left;
+}
+
+.info {
+    color: white;
+    float: left;
+}
+
+.info h4 {
+    font-size: 13px;
+    padding: 9px 5px 1px 10px;
+}
+
+.info p {
+    font-size: 11px;
+    padding: 2px 10px;
+}
+
+.info p:last-child {
+    color: #69c5e6;
 }
