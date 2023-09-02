@@ -46,14 +46,22 @@ body {
 }
 
 .image img {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
     width: 65px;
     float: left;
+    display: block;
 }
 
 .info {
     color: white;
     float: left;
-    height: 65px;
 }
 
 .info h4 {
